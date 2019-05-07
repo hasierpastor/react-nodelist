@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<h1
+  style={
+    Object {
+      "fontFamily": "raleway",
+      "fontSize": "4rem",
+      "margin": "1rem",
+    }
+  }
+>
+  Tree Table 
+  <FontAwesomeIcon
+    border={false}
+    className=""
+    fixedWidth={false}
+    flip={null}
+    icon="tree"
+    inverse={false}
+    listItem={false}
+    mask={null}
+    pull={null}
+    pulse={false}
+    rotation={null}
+    size={null}
+    spin={false}
+    style={
+      Object {
+        "color": "#228B22",
+      }
+    }
+    symbol={false}
+    title=""
+    transform={null}
+  />
+</h1>
+`;

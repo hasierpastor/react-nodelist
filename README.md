@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Styra Frontend Challenge
 
-## Available Scripts
+I decided to complete this challenge using React because it is the frontend framework that I am most comfortable using.
 
-In the project directory, you can run:
+##Part A
+After looking at the node object structure I thought the node object had a similar structure to a tree data structure. Therefore I thought it would be a good idea to create a tree table structure with collapsing/expandable rows. The parent nodes would be expandable and display it's children nodes.
+
+Difficulties:
+I had some trouble structuring the table in React, mainly because it was difficult to manage state in my parent component and only expand certain rows without when the parent node was clicked.
+Because of this, I decided to use an open source component called react-collapsible.
+https://github.com/glennflanagan/react-collapsible
+
+Improvements:
+If I had more time I would have like to improve the structure and layout of my table. For example, creating another expandable component to display not only node children but the values of those children.
+
+##Part B
+In order to sort the nodes, I created 2 functions for sorting the node object in ascending and descending order.
+
+Improvements:
+The run time of my sort function is O(n^2) because I am running the function called convertKeysNum(obj) inside my sort function.
+I would have potentially liked to improve the runtime to O(nlogn)
+
+##Part C
+In order to scale the application to thousands of nodes, I decided to use code splitting and lazy loading. To do is I used the React.lazy and the suspense component.
+Other libraries I considered for integrating lazy loading/scaling were:
+
+1. React virtualized: https://bvaughn.github.io/react-virtualized/#/components/List
+2. React progressive list: https://github.com/mattcolman/react-progressive-list
+3. React intersection loader: https://www.npmjs.com/package/react-intersection-observer
+
+Ideas:
+Other ideas I had to scale the application would be to store/cache certain amounts of data/nodes in some form of storage such as localStorage or a non-relational database such as Redis/MongoDB for fast retrieval.
+
+## Getting Started
+
+### `npm install`
+
+Start the application:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. [React](https://reactjs.org/)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thank you very much for giving me the opportunity to tackle this challenge. It was challenging but a good opportunity for me to test myself and find new improvements to make and topics to learn. Hope to be in contact soon!

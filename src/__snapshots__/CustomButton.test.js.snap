@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<Button
+  color="success"
+  outline={true}
+  style={
+    Object {
+      "margin": "1.5rem",
+      "padding": "1rem",
+    }
+  }
+  tag="button"
+/>
+`;
